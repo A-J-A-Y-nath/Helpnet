@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Head Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2>Community Head Dashboard</h2>
+    </header>
+
+    <main>
+        <section class="add-needs">
+            <h3>Add Basic Needs</h3>
+            <form action="submit_needs.html" method="POST">
+                <label for="need">Need</label>
+                <input type="text" id="need" name="need" placeholder="Enter a need (e.g., food, clothes)" required>
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="needs-list">
+            <h3>Current Needs</h3>
+            <ul>
+                <li>Food - 50 kg</li>
+                <li>Clothes - 200 pieces</li>
+                <li>Soap - 100 pieces</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

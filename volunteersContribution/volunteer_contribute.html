@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Contribute</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2>Contribute to Disaster Relief</h2>
+    </header>
+
+    <main>
+        <section class="browse-needs">
+            <h3>Available Needs</h3>
+            <ul>
+                <li>Food - 50 kg</li>
+                <li>Clothes - 200 pieces</li>
+                <li>Soap - 100 pieces</li>
+            </ul>
+        </section>
+
+        <section class="contribute">
+            <h3>Contribute Now</h3>
+            <form action="submit_contribution.html" method="POST">
+                <label for="item">Select Item to Contribute</label>
+                <select id="item" name="item" required>
+                    <option value="Food">Food</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Soap">Soap</option>
+                </select>
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required>
+
+                <button type="submit">Contribute</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
